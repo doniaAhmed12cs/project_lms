@@ -1,0 +1,498 @@
+
+.footer {
+  background-color: #f2f2f2;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  
+}
+
+.footer p {
+  margin: 0;
+}
+/* footer */
+
+.header {
+  background-color: #0077cc;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #cdecff;
+}
+/* Header */
+.login-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+   /*login style*/
+
+   .h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  /*admin manage courses*/
+  .h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto auto ;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #005fa3;
+  }
+  /*admin manage instractors*/
+
+
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005fa3;
+  }
+  
+  p {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  /*assgin instractor*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #0077cc;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  /*ViewEnrolledStu*/
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #0077cc;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+
+/*RegisteredCourses*/
+
+
+.StuRegester {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/*RegisterCourses*/
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.updel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*UpdateDeleteC*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+/*UpdateDeleteIn*/
+
+
+
+button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+/*logout*/
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #0077cc;
+  text-align: center;
+}
+/*NotFound*/
+
+form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/*Regester*/
+
+.ell{
+  display: block;
+}
