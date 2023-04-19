@@ -31,9 +31,9 @@ function App() {
     <div className="App">
      <div className="ell">
      <HeaderAdmin />
-   {/* 
+
    <HeaderStudent /> 
-   */}
+   
    {/*  <HeaderInstractor /> */}
       <Outlet />
        <Footer /> 
