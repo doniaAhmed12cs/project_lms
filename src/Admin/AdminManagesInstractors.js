@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import axios from "axios";
-
+import "../Components/App.css";
 
 const AdminManageInstructors = () => {
 
@@ -23,7 +23,7 @@ const CourseForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newCourse = {fName ,lName ,email ,password ,phone ,status};
-    axios.post("/api/instractors", newCourse).then((res) => {
+    axios.post("http://localhost:4000/admin/addInstrctor", newCourse).then((res) => {
       console.log(res.data);
     });
   };

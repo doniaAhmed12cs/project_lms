@@ -3,7 +3,8 @@ import RegisteredCourses from  './Student/StuRegCrsG'
 import SetGradeForm from './Instractor/SetGrades';
 import AdminManageCourses from './Admin/AdminManageCourses';
 import { Link } from 'react-router-dom';
-
+import axios from "axios";
+import "../src/Components/App.css";
 
 
 
@@ -11,31 +12,25 @@ import { Link } from 'react-router-dom';
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [userType, setUserType] = useState('');
+  const [role, setRole] = useState('');
 
-  const handleLogin = (event) => {
-    event.preventDefault();
-    // Send the login credentials to the backend API
-    fetch('/api/login', {
-      method: 'POST',
-      body: JSON.stringify({ username, password }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Login successful:', data);
-        setUserType(data.type);
-      })
-      .catch(error => {
-        console.error('Login failed:', error);
-        // Display an error message to the user
-        alert('Login failed. Please try again.');
-      });
-  };
+  const handleLogin = (e) => {
+      e.preventDefault();
+      // Send the login credentials to the backend API
+      axios.post('http://localhost:4000/login', { username, password, role })
+        .then(response => {
+          console.log('Login successful:', response.data);
+          setRole(response.data.role);
+        })
+        .catch(error => {
+          console.error('Login failed:', error);
+          // Display an error message to the user
+          alert('Login failed. Please try again.');
+        });
+    };
+  
 
-  if (userType === '') {
+  if (role === '') {
     return (
       <div className='login-contain'>
         <h1 >Login</h1>
@@ -55,15 +50,16 @@ export default function Login() {
         </form>
       </div>
     );
-  } else if (userType === 'student') {
+  } else if (role === 'student') {
     return <RegisteredCourses />;
-  } else if (userType === 'teacher') {
+  } else if (role === 'teacher') {
     return <SetGradeForm />;
-  } else if (userType === 'admin') {
+  } else if (role === 'admin') {
     return <AdminManageCourses />;
   } else {
-    console.error('Invalid user type:', userType);
+    console.error('Invalid user type:', role);
     return <div>An error occurred. Please try again later.</div>;
-  }
-}
+  };
 
+
+};

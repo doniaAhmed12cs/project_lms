@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import "../Components/App.css";
 
 function AssignInstructorToCours() {
   const [courseId, setCourseId] = useState('');
@@ -9,8 +9,9 @@ function AssignInstructorToCours() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    //${courseId}
     try {
-      const response = await axios.put(`/api/courses/${courseId}/instructor`, {
+      const response = await axios.put(`http://localhost:4000/admin/assignInstrctor`, {
         instructorId: instructorId,
       });
       setMessage('Instructor assigned successfully!');

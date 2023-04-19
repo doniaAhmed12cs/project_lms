@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-
-
+import React, { useState ,useEffect} from "react";
+import axios from "axios";
+import "../Components/App.css";
 const initialdata = [
   { id: 1, fName: 'Alice', lName:'David' ,course: 'Math' },
   { id: 2, fName: 'Bob', lName:'Fran',course: 'Science' },
@@ -10,13 +10,24 @@ const initialdata = [
   { id: 6, fName: 'Frank',lName:'peo' ,course: 'English' },
 ];
 const EnrolledStudents =()=> {
-
+  
   const[data,setData] = useState(initialdata);
   const [id, setId] = useState('');
   const [fName, setFName] = useState('');
   const [lName, setLName] = useState('');
   const [ course, setCourse] = useState('');
+  
 
+
+  useEffect(() => {
+    axios.get('http://localhost:4000/instructor/enrolledStudents')
+      .then(response => {
+        setData(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
 
   const rows = data.map(({ id, fName,lName, course }) => (
     <tr key={id}>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "../Components/App.css";
 
 function RegisterCourses() {
   const [courses,setCourses ] = useState([]);

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-
-
+import React, { useState,useEffect } from "react";
+import axios from "axios";
+import "../Components/App.css";
 
 
 const initialdata = [
@@ -11,12 +11,22 @@ const initialdata = [
 
 
 const SetGradeForm =() => {
- const[data,setData] = useState(initialdata);
   const [student, setStudent] = useState('');
   const [math, setMath] = useState('');
   const [science, setscience] = useState('');
   const [english, setEnglish] = useState('');
   const [status, setStatus] = useState('');
+  const[data,setData] = useState(initialdata);
+  
+  useEffect(() => {
+    axios.get('http://localhost:4000/instructor/setGrade')
+      .then(response => {
+        setData(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
 
   const rows = data.map(({ student, math, science, english }) => (
     <tr key={student}>

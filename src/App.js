@@ -5,10 +5,11 @@ import React, { useState } from 'react';
 import HeaderStudent from './HeaderStudent';
 import HeaderInstractor from './HeaderInstractor';
 import HeaderAdmin from './HeaderAdmin';
+import "../src/Components/App.css";
 
 
 function App() {
- /* const [userType, setUserType] = useState('student');
+ const [userType, setUserType] = useState('student');
 
   if (userType === 'student') {
     return (
@@ -25,13 +26,14 @@ function App() {
   
   }
 
-*/
 
   return (
     <div className="App">
      <div className="ell">
      <HeaderAdmin />
-   {/* <HeaderStudent /> */}
+   {/* 
+   <HeaderStudent /> 
+   */}
    {/*  <HeaderInstractor /> */}
       <Outlet />
        <Footer /> 

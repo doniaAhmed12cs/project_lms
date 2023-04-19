@@ -142,48 +142,50 @@ button[type="submit"]:hover {
     background-color: #005fa3;
   }
   /*admin manage courses*/
-  .h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
+  
   
   form {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: auto auto ;
+    margin: 0 auto;
   }
   
   label {
-    display: block;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
     font-weight: bold;
   }
   
-  input,
+  input[type="text"],
   select {
     padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 2px solid #ccc;
+
     border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
     font-size: 1rem;
   }
   
+  select {
+    width: 100%;
+  }
+  
   button {
-    background-color: #0077cc;
-    color: #fff;
-    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
+
     cursor: pointer;
     margin-top: 1rem;
   }
   
   button:hover {
-    background-color: #005fa3;
+    background-color: #3e8e41;
   }
+  
+  
   /*admin manage instractors*/
 
 
@@ -338,91 +340,114 @@ button[type="submit"]:hover {
 
 
 table {
-  width: 100%;
+
   border-collapse: collapse;
-  margin-top: 2rem;
+  width: 100%;
 }
 
-th,
-td {
-  padding: 0.5rem;
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
   text-align: left;
 }
 
-th {
-  background-color: #0077cc;
-  color: #fff;
-}
-
-tr:nth-child(even) {
+table th {
   background-color: #f2f2f2;
+  font-weight: bold;
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
 }
 
-tr:hover {
-  background-color: #ddd;
+form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
 }
 
-button {
-  background-color: #0077cc;
-  color: #fff;
-  padding: 0.5rem 1rem;
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+
   cursor: pointer;
-  margin-right: 0.5rem;
 }
 
-button:hover {
-  background-color: #005fa3;
-}
-
-.updel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+form button:hover {
+  background-color: #3e8e41;
 }
 /*UpdateDeleteC*/
 
 table {
-  width: 100%;
   border-collapse: collapse;
-  margin-top: 2rem;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-th,
-td {
-  padding: 0.5rem;
+th, td {
   text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-  background-color: #0077cc;
-  color: #fff;
+  background-color: #4CAF50;
+  color: white;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-tr:hover {
-  background-color: #ddd;
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 button {
-  background-color: #0077cc;
-  color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
   cursor: pointer;
-  margin-right: 0.5rem;
+  margin-right: 10px;
 }
 
 button:hover {
-  background-color: #005fa3;
+  background-color: #3e8e41;
 }
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+td:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*UpdateDeleteIn*/
 
 

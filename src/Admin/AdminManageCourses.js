@@ -21,7 +21,7 @@ const CourseForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newCourse = { code, name, status };
-    axios.post("/api/courses", newCourse).then((res) => {
+    axios.post("http://localhost:4000/admin/addCourse", newCourse).then((res) => {
       console.log(res.data);
     });
   };

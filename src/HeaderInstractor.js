@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../src/Components/App.css";
+
 export default function HeaderInstractor() {
     return (
       <header className='header'>

@@ -1,6 +1,6 @@
-import React, { useState} from 'react';
-
-
+import React, { useState,useEffect} from 'react';
+import axios from "axios";
+import "../Components/App.css";
 const initialdata = [
   { code: 3456, course: 'Math', grade: 92 },
 
@@ -16,7 +16,15 @@ const RegisteredCourses =() => {
   const [code, setCode] = useState('');
   const [ course, setCourse] = useState('');
   const [ grade, setGrade] = useState('');
-
+  useEffect(() => {
+    axios.get('http://localhost:4000/student/showCouresewithGrades')
+      .then(response => {
+        setData(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
   const rows = data.map(({ code, course, grade }) => 
       <tr>
          <td>{code}</td>
